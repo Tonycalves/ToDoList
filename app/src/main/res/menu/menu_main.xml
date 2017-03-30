@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jatal.todolist.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/reorder"
+        android:title="@string/reorder"
+        >
+
+        <menu android:id="@+id/sousmenu">
+            <item android:id="@+id/obcreat"
+                android:title="@string/obcreat"   />
+            <item android:id="@+id/obname"
+                android:title="@string/obname"  />
+            <item android:id="@+id/obtodo"
+                android:title="@string/obtodo"  />
+        </menu>
+    </item>
+
+</menu>

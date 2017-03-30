@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="com.example.jatal.todolist.ViewNoteActivity"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="UnusedAttribute" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables"
+            android:id="@+id/headerL"
+            android:clickable="true"
+            android:onClick="ReSetState">
+
+            <ImageView
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_todo"
+                android:id="@+id/todo"
+                android:contentDescription="@string/descTodo"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:text="@string/fname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameView"
+                android:textStyle="normal|bold"
+                android:textSize="30sp"
+                android:textColor="@color/black_color"
+                android:layout_weight="1"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:id="@+id/SpacerViewB" />
+
+        <TextView
+            android:text="@string/fcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentView"
+            android:textStyle="normal"
+            android:textSize="25sp"
+            android:textColor="@color/black_color"
+            android:paddingTop="5dp"
+            android:layout_margin="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:id="@+id/Spacerview" />
+
+        <TextView
+            android:text="@string/fdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateView"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="20sp"
+            android:textColor="@color/black_color"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+            <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+                android:weightSum="1">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:backgroundTint="@android:color/transparent"
+                    app:srcCompat="@drawable/save"
+                    android:layout_weight="1.33" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom|end">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_margin="@dimen/fab_margin"
+                app:backgroundTint="@android:color/transparent"
+                app:srcCompat="@drawable/edit"
+                android:layout_weight="0.03" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

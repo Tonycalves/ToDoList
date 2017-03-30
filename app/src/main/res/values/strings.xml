@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="action_settings">Settings</string>
+    <string name="reorder">Re-Order</string>
+    <string name="obcreat">Creation Date</string>
+    <string name="obname">Name</string>
+    <string name="obtodo">ToDo</string>
+
+    <string name="descTodo">Indicate state of the note</string>
+
+    <string name="name">Name :</string>
+    <string name="hint_name">New name</string>
+    <string name="content">Contenu :</string>
+    <string name="hint_cont">New note</string>
+
+    <string name="date">Date:</string>
+    <string name="hour">Time:</string>
+    <string name="rapp">Remind</string>
+    <string name="save">Save</string>
+
+    <string name="fname">Name Ou TitreBeaucoup trop long</string>
+    <string name="fdate">16/02</string>
+    <string name="fsdate"> - </string>
+    <string name="fcontent">Content lorem ipsum lala lilol Content lorem ipsum lala lilol Content lorem ipsum lala lilol</string>
+    </resources>
